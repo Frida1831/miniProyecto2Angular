@@ -6,6 +6,10 @@ const productosRoutes = require('./routes/productos.routes');
 const errorMiddleware = require('./middleware/error.middlewares');
 const app = express();
 
+app.get('/', (req, res) => {
+    res.send('API Midnight Cafeteria funcionando 🚀');
+});
+
 app.use(cors());
 app.use(express.json());
 app.use('/api/productos', productosRoutes);
