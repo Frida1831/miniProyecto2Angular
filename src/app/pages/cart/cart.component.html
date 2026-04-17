@@ -1,0 +1,21 @@
+<section class="cart">
+  <h1>Carrito 🛒</h1>
+
+  @if (items.length === 0) {
+    <p>Tu carrito está vacío</p>
+  }
+
+  @for (item of items; track $index) {
+    <div class="cart-item">
+      <img [src]="item.image" alt="">
+      <div>
+        <h2>{{ item.name }}</h2>
+        <p>$ {{ item.price }}</p>
+      </div>
+
+      <button (click)="remove($index)">Eliminar</button>
+
+      <button (click)="checkout()">Comprar 🧾</button>
+    </div>
+  }
+</section>

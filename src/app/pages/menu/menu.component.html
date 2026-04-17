@@ -1,0 +1,12 @@
+<section class="menu">
+  <h1>Menú ☕</h1>
+
+  <div class="cards">
+    @for (product of products; track product.id) {
+      <app-product-card 
+        [product]="product"
+        (add)="addToCart($event)">
+      </app-product-card>
+    }
+  </div>
+</section>

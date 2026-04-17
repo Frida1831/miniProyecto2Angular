@@ -1,0 +1,13 @@
+.history {
+  padding: 100px 40px;
+  background: #0d0d0d;
+  color: #f5e6d3;
+  min-height: 100vh;
+}
+
+.order {
+  background: #1a1a1a;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}

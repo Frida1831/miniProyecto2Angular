@@ -1,0 +1,17 @@
+<section class="history">
+  <h1>Historial 🧾</h1>
+
+  @if (orders.length === 0) {
+    <p>No hay pedidos aún</p>
+  }
+
+  @for (order of orders; track $index) {
+    <div class="order">
+      <h2>Pedido {{$index + 1}}</h2>
+
+      @for (item of order; track item.id) {
+        <p>{{ item.name }} - ${{ item.price }}</p>
+      }
+    </div>
+  }
+</section>

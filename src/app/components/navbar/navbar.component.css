@@ -1,0 +1,51 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f5e6d3;
+  z-index: 1000;
+  box-sizing: border-box; /* 💥 ESTA ES LA CLAVE */
+}
+
+/* Logo */
+.logo {
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+}
+
+/* Links */
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #f5e6d3;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: #c8a97e;
+}
+
+/* Botón login PRO */
+.login-btn {
+  background: #c8a97e;
+  padding: 6px 15px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #a67c52;
+}
